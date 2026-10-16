@@ -112,7 +112,7 @@ export default function Contact() {
           </h2>
 
           <p className="font-body text-sm leading-relaxed text-on-surface-variant max-w-sm">
-            Taking <strong className="text-on-surface font-normal">2 more weddings</strong> in 2026.
+            Now booking <strong className="text-on-surface font-normal">2027</strong> weddings &amp; engagements.
             Send me your date and let's figure out what fits.
           </p>
 
@@ -138,7 +138,7 @@ export default function Contact() {
 
           <div className="border-l-2 border-secondary pl-5">
             <p className="font-body text-xs uppercase tracking-widest text-on-surface-variant leading-relaxed">
-              Booking 2026 · 2027<br />
+              Booking 2027<br />
               <span className="text-secondary">Cherry blossom season filling fast</span>
             </p>
           </div>
