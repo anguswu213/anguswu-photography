@@ -77,6 +77,32 @@ const weddingTiers = [
   },
 ]
 
+const maternityTiers = [
+  {
+    name: 'Bloom',
+    price: '$528',
+    tagline: 'A gentle hour, just the glow.',
+    includes: [
+      '1 hr shoot',
+      '40 edited photos',
+      'Delivered within 2 weeks',
+      'Google Drive or iCloud gallery',
+    ],
+  },
+  {
+    name: 'Halo',
+    price: '$728',
+    tagline: 'More time, more story.',
+    featured: true,
+    includes: [
+      '1.5 hr shoot',
+      '60 edited photos',
+      'Same-night preview',
+      'Delivered within 1 week',
+    ],
+  },
+]
+
 function PricingCard({ tier, index }) {
   const ref = useRef(null)
   useEffect(() => {
@@ -169,7 +195,7 @@ export default function Pricing() {
     return () => obs.disconnect()
   }, [])
 
-  const tiers = tab === 'engagement' ? engagementTiers : weddingTiers
+  const tiers = tab === 'engagement' ? engagementTiers : tab === 'wedding' ? weddingTiers : maternityTiers
 
   return (
     <section id="packages" className="py-28 md:py-40 px-8 md:px-12 bg-surface">
@@ -190,7 +216,7 @@ export default function Pricing() {
 
         {/* Tab toggle */}
         <div className="flex gap-0 mb-12 border border-outline-variant w-fit">
-          {[['engagement', 'Engagement'], ['wedding', 'Wedding']].map(([val, label]) => (
+          {[['engagement', 'Engagement'], ['wedding', 'Wedding'], ['maternity', 'Maternity']].map(([val, label]) => (
             <button
               key={val}
               onClick={() => setTab(val)}
@@ -206,7 +232,7 @@ export default function Pricing() {
         </div>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+        <div className={`grid grid-cols-1 gap-4 md:gap-6 ${tab === 'maternity' ? 'md:grid-cols-2 max-w-4xl' : 'md:grid-cols-3'}`}>
           {tiers.map((tier, i) => (
             <PricingCard key={tier.name} tier={tier} index={i} />
           ))}

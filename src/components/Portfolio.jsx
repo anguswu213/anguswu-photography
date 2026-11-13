@@ -131,9 +131,30 @@ const couples = [
       '/images/family/sabrina-ethan/DSC01959.jpg',
     ],
   },
+  {
+    id: 'sarah-eric',
+    name: 'Sarah & Eric',
+    location: 'Golden Hour · Vancouver',
+    category: 'Maternity',
+    cover: '/images/maternity/sarah-eric/DSC04336.jpg',
+    photos: [
+      '/images/maternity/sarah-eric/DSC04336.jpg',
+      '/images/maternity/sarah-eric/DSC04308.jpg',
+      '/images/maternity/sarah-eric/DSC04320.jpg',
+      '/images/maternity/sarah-eric/DSC04354.jpg',
+      '/images/maternity/sarah-eric/DSC04388.jpg',
+      '/images/maternity/sarah-eric/DSC04399.jpg',
+      '/images/maternity/sarah-eric/DSC04412.jpg',
+      '/images/maternity/sarah-eric/DSC04441.jpg',
+      '/images/maternity/sarah-eric/DSC04444.jpg',
+      '/images/maternity/sarah-eric/DSC04462.jpg',
+      '/images/maternity/sarah-eric/DSC04469.jpg',
+      '/images/maternity/sarah-eric/DSC04536.jpg',
+    ],
+  },
 ]
 
-const categories = ['All', 'Weddings', 'Engagements', 'Family']
+const categories = ['All', 'Weddings', 'Engagements', 'Maternity', 'Family']
 
 // ─── Lightbox ────────────────────────────────────────────────────────────────
 
