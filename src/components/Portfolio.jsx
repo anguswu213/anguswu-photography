@@ -4,6 +4,24 @@ import { useState, useRef, useEffect, useCallback } from 'react'
 
 const couples = [
   {
+    id: 'joey-ryan',
+    name: 'Joey & Ryan',
+    location: 'Queen Elizabeth Park · Vancouver',
+    category: 'Weddings',
+    cover: '/images/weddings/joey-ryan/dsc04991.jpg',
+    photos: [
+      '/images/weddings/joey-ryan/dsc04991.jpg',
+      '/images/weddings/joey-ryan/dsc04635.jpg',
+      '/images/weddings/joey-ryan/dsc04752.jpg',
+      '/images/weddings/joey-ryan/dsc04857.jpg',
+      '/images/weddings/joey-ryan/dsc05267.jpg',
+      '/images/weddings/joey-ryan/dsc05635.jpg',
+      '/images/weddings/joey-ryan/dsc05871.jpg',
+      '/images/weddings/joey-ryan/dsc06098.jpg',
+      '/images/weddings/joey-ryan/dsc06197.jpg',
+    ],
+  },
+  {
     id: 'christy-gordon',
     name: 'Christy & Gordon',
     location: 'Stanley Park · Cherry Blossom',

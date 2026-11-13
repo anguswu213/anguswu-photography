@@ -3,7 +3,7 @@ import { useState, useRef, useEffect } from 'react'
 const engagementTiers = [
   {
     name: 'Timeless',
-    price: '$690',
+    price: '$588',
     tagline: 'The essentials, beautifully done.',
     includes: [
       '1.5 hr shoot',
@@ -14,7 +14,7 @@ const engagementTiers = [
   },
   {
     name: 'Editorial',
-    price: '$990',
+    price: '$868',
     tagline: 'The smart middle choice.',
     includes: [
       '30-min pre-shoot consultation',
@@ -26,7 +26,7 @@ const engagementTiers = [
   },
   {
     name: 'Prestige',
-    price: '$1,500',
+    price: '$1,288',
     tagline: 'Photos tonight. Not in two months.',
     featured: true,
     includes: [
@@ -42,7 +42,7 @@ const engagementTiers = [
 const weddingTiers = [
   {
     name: 'Intimate',
-    price: '$1,500',
+    price: '$1,188',
     tagline: 'For the ceremony that matters most.',
     includes: [
       '3 hr coverage',
@@ -53,7 +53,7 @@ const weddingTiers = [
   },
   {
     name: 'Classic',
-    price: '$2,800',
+    price: '$2,488',
     tagline: 'Full day, full story.',
     includes: [
       '6 hr coverage',
@@ -64,7 +64,7 @@ const weddingTiers = [
   },
   {
     name: 'Signature',
-    price: '$4,200',
+    price: '$3,688',
     tagline: 'The full experience. Same-night magic.',
     featured: true,
     includes: [
@@ -211,6 +211,27 @@ export default function Pricing() {
             <PricingCard key={tier.name} tier={tier} index={i} />
           ))}
         </div>
+
+        {/* Micro wedding strip (wedding tab only) */}
+        {tab === 'wedding' && (
+          <div className="mt-6 border border-outline-variant px-8 py-6 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <div>
+              <span className="section-label">Micro Wedding</span>
+              <p className="font-body text-xs text-on-surface-variant mt-2 leading-relaxed">
+                Signing ceremonies &amp; elopements — 2 hr coverage, 30 edited photos, online gallery.
+              </p>
+            </div>
+            <div className="flex items-center gap-6 shrink-0">
+              <span className="font-headline italic text-3xl text-on-surface">$868</span>
+              <a
+                href="#contact"
+                className="border border-outline-variant text-on-surface px-6 py-3 text-[0.62rem] uppercase tracking-widest2 font-body hover:bg-on-surface hover:text-background transition-all duration-500"
+              >
+                Enquire
+              </a>
+            </div>
+          </div>
+        )}
 
         {/* Bundle note */}
         <div className="mt-10 text-center">
