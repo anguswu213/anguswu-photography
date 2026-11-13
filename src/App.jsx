@@ -5,6 +5,7 @@ import About      from './components/About'
 import Pricing    from './components/Pricing'
 import HowItWorks from './components/HowItWorks'
 import Contact    from './components/Contact'
+import Testimonials from './components/Testimonials'
 import Footer     from './components/Footer'
 
 // Divider between major sections
@@ -21,6 +22,8 @@ export default function App() {
         <Portfolio />
         <GoldDivider />
         <About />
+        <GoldDivider />
+        <Testimonials />
         <GoldDivider />
         <Pricing />
         <GoldDivider />
